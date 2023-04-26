@@ -5,11 +5,11 @@ import PostLists from './Pages/PostLists';
 import Post from './Pages/Post';
 import EditPost from './Pages/EditPost';
 import ErrorPage from './Pages/ErrorPage';
-import Kicks from './Pages/Kicks';
+import Kicks from './Pages/Kicks/Kicks';
 
 const App = () => {
   return (
-    <div className='App h-[100dvh]'>
+    <div className='App h-[100dvh] px-6'>
       <Header />
       <Routes>
         <Route path='/' element={ <PostLists /> } />
