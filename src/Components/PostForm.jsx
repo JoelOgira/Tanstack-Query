@@ -8,11 +8,12 @@ const PostForm = () => {
 
     const renderField = (label) => (
         <div>
-            <label className="px-4">{label}</label>
+            <label className="px-4 border rounded py-2.5">{label}</label>
             <input 
                 type="text" 
+                required
                 name={label.toLowerCase()}
-                className="border focus:outline-transparent p-2"
+                className="border focus:outline-transparent p-2 rounded"
                 value={post[label.toLowerCase()]}
                 onChange={handleChange}
             />
@@ -36,12 +37,15 @@ const PostForm = () => {
     }
 
     return (
-        <form onSubmit={handleSubmit} className="flex flex-col space-y-3">
+        <form onSubmit={handleSubmit} className="flex flex-col space-y-3 mt-4">
             {renderField('Title')}
             {renderField('Body')}
-            <button type="submit">Submit</button>
+            <div>
+                <button type="submit" className=" border rounded py-3 px-6">Submit</button>
+            </div>
         </form>
     )
 }
 
-export default PostForm
+export default PostForm;
+
