@@ -9,7 +9,7 @@ import Kicks from './Pages/Kicks/Kicks';
 
 const App = () => {
   return (
-    <div className='App h-[100dvh] px-6'>
+    <div className='App h-[100dvh]'>
       <Header />
       <Routes>
         <Route path='/' element={ <PostLists /> } />
