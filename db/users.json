@@ -1,0 +1,59 @@
+{
+  "users": [
+    {      
+      "name": "Julia Roberts",
+      "details": "Apparently a famous actress?",
+      "id": 1
+    },
+    {      
+      "name": "Vanessa Carlson",
+      "details": "Used to be cute",
+      "id": 2
+    },
+    {
+      "name": "Tucker Culson",
+      "details": "He is Jobless now",
+      "id": 3
+    },
+    {
+      "name": "Test",
+      "details": "Test details\n",
+      "id": 4
+    },
+    {
+      "name": "Second test",
+      "details": "second test details",
+      "id": 5
+    },
+    {
+      "name": "Another",
+      "details": "mango",
+      "id": 6
+    },
+    {
+      "name": "Chat GPT",
+      "details": "AI wrote the debug for this",
+      "id": 7
+    },
+    {
+      "name": "Newer Debug",
+      "details": "This seems solid",
+      "id": 8
+    },
+    {
+      "name": "ugh",
+      "details": "Another",
+      "id": 9
+    },
+    {
+      "name": "Julia Roberts",
+      "details": "Newer Debug",
+      "id": 10
+    },
+    {
+      "name": "Fuck",
+      "details": "This",
+      "id": 11
+    }
+  ]
+}
