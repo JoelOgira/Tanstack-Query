@@ -1,11 +1,11 @@
 {
   "users": [
-    {      
+    {
       "name": "Julia Roberts",
       "details": "Apparently a famous actress?",
       "id": 1
     },
-    {      
+    {
       "name": "Vanessa Carlson",
       "details": "Used to be cute",
       "id": 2
