@@ -4,7 +4,7 @@ import { useState } from "react";
 import { addUser } from '../../api/usersApi';
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 
-const CreateUsers = ({ navigate, isLoading, isError, error }) => {
+const CreateUsers = ({ isLoading, isError, error }) => {
 
     const [name, setName] = useState('');
     const [details, setDetails] = useState('');
@@ -19,7 +19,6 @@ const CreateUsers = ({ navigate, isLoading, isError, error }) => {
         createUsersMutation.mutate({ name, details });
         setName('');
         setDetails('');
-        navigate('/users')
     }
 
     return (
