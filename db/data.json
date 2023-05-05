@@ -1117,40 +1117,10 @@
       "completed": true
     },
     {
-      "userId": 10,
-      "id": 196,
-      "title": "consequuntur aut ut fugit similique",
-      "completed": true
-    },
-    {
-      "userId": 10,
-      "id": 197,
-      "title": "dignissimos quo nobis earum saepe",
-      "completed": true
-    },
-    {
-      "userId": 10,
-      "id": 198,
-      "title": "quis eius est sint explicabo",
-      "completed": false
-    },
-    {
-      "userId": 10,
-      "id": 199,
-      "title": "numquam repellendus a magnam",
-      "completed": true
-    },
-    {
       "userId": 1,
-      "title": "The next very new todo",
-      "completed": true,
-      "id": 201
-    },
-    {
-      "userId": 1,
-      "title": "Today is Saturday",
+      "title": "This is a very new todo",
       "completed": false,
-      "id": 202
+      "id": 196
     }
   ]
 }
