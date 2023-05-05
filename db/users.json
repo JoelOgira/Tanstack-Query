@@ -2,7 +2,7 @@
   "users": [
     {
       "name": "Julia Roberts",
-      "details": "Apparently a famous actress?",
+      "details": "Apparently a famous actress? Who I don't know nothing about?",
       "id": 1
     },
     {
@@ -12,7 +12,7 @@
     },
     {
       "name": "Tucker Culson",
-      "details": "He is Jobless now",
+      "details": "He is Jobless now\nLet's see what he will do now without the Mudroch money. ",
       "id": 3
     },
     {
@@ -26,11 +26,6 @@
       "id": 5
     },
     {
-      "name": "Another",
-      "details": "mango",
-      "id": 6
-    },
-    {
       "name": "Chat GPT",
       "details": "AI wrote the debug for this",
       "id": 7
@@ -41,19 +36,19 @@
       "id": 8
     },
     {
-      "name": "ugh",
-      "details": "Another",
-      "id": 9
-    },
-    {
       "name": "Julia Roberts",
       "details": "Newer Debug",
       "id": 10
     },
     {
-      "name": "Fuck",
-      "details": "This",
-      "id": 11
+      "name": "Don't know",
+      "details": "No idea either",
+      "id": 12
+    },
+    {
+      "name": "Looking good no?",
+      "details": "Hell no",
+      "id": 13
     }
   ]
 }
