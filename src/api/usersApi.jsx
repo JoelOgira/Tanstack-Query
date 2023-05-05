@@ -15,11 +15,13 @@ export const getUser = async (id) => {
 }
 
 export const addUser = async (user) => {
-    const response = await usersApi.post(`/users`, user);
-    return response.data;
+    return await usersApi.post(`/users`, user);
 }
 
 export const updateUser = async ({id, ...updatedUser}) => {
-    const response = await usersApi.put(`/users/${id}`, updatedUser);
-    return response.data;
+    return await usersApi.put(`/users/${id}`, updatedUser);
+}
+
+export const deleteUser = async ({id}) => {
+    return await usersApi.delete(`/users/${id}`, id);
 }
