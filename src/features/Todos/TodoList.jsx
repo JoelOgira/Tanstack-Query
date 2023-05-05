@@ -45,18 +45,6 @@ const TodoList = () => {
         setNewTodo('');
     }
 
-    const handleUpdate = (id) => {
-        const todo = todos.find(foundTodo => foundTodo?.id === id);
-        updateTodoMutation.mutate({
-            ...todo, completed: !todo.completed
-        })
-    }
-
-    const handleDelete = (id) => {
-        const todo = todos.find(foundTodo => foundTodo?.id === id);
-        deleteTodoMutation.mutate({ id: todo?.id })
-    }
-
     const newItemSection = (
         <div className="border my-5 py-2.5 px-2.5">
             <div className="flex flex-row justify-between py-2">
@@ -105,15 +93,15 @@ const TodoList = () => {
                             checked={todo?.completed}
                             className="mr-2"
                             onChange={() => 
-                                handleUpdate(todo?.id)
+                                updateTodoMutation.mutate({...todo, completed: !todo?.completed})
                             }
                         />
                         <label htmlFor={todo?.id}>{todo?.title}</label>
                     </div>
 
-                    <button className="border rounded-lg px-4 py-2.5" onClick={() => handleDelete(todo?.id)}>
+                    <button className="border rounded-lg px-4 py-2.5" onClick={() => deleteTodoMutation.mutate({ id: todo?.id })}>
                         <FaTrash color="red"/>
-                  </button>
+                    </button>
                 </article>
             )
         })
