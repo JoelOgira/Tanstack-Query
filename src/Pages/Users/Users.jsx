@@ -7,7 +7,8 @@ const Users = () => {
     const navigate = useNavigate();
     const { data:users, isLoading, isError, error } = useQuery({
         queryKey: ['users'],
-        queryFn: getUsers
+        queryFn: getUsers,
+        select: users => users.sort((a, b) => b.id - a.id)
     })
 
     return (
@@ -15,9 +16,6 @@ const Users = () => {
             <AddUserForm 
                 users={users}
                 navigate={navigate}
-                isLoading={isLoading}
-                isError={isError}
-                error={error}
             />
             {isLoading && <p>Loading...</p> }
             {!isLoading && isError && <p>Something went wrong!!! {error.message}</p> }
