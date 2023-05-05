@@ -1,14 +1,21 @@
 import { useParams,useNavigate } from "react-router-dom";
-import { useQuery } from "@tanstack/react-query";
-import { getUser } from '../../api/usersApi';
+import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
+import { getUser, deleteUser } from '../../api/usersApi';
 
 const UserDetails = () => {
     const { id } = useParams();
     const navigate = useNavigate();
+    const queryClient = useQueryClient();
     const { data: user, isLoading, isError, error } = useQuery({
         queryKey: [ 'user', id ],
         queryFn: () => getUser(id),
         enabled: Boolean(id)
+    });
+
+    const deleteUserMutation = useMutation(deleteUser, {
+        onSuccess: () => {
+            queryClient.invalidateQueries(['user', id]);
+        }
     })
 
     return (
@@ -25,7 +32,7 @@ const UserDetails = () => {
                     className="border border-black px-4 py-2 hover:bg-black hover:text-white rounded-lg ">
                         Edit
                     </button>
-                    <button onClick={() => navigate(`/users/edit/${user?.id}`)} 
+                    <button onClick={() => {deleteUserMutation.mutate({id: user?.id}); navigate('/users')}}
                     className="border bg-black text-white px-4 py-2 hover:bg-white hover:text-black hover:border-black rounded-lg mx-5">
                         Delete
                     </button>
