@@ -21,7 +21,7 @@ const Users = () => {
             {!isLoading && isError && <p>Something went wrong!!! {error.message}</p> }
             {!isLoading && !isError &&
                 users?.map((user) => 
-                <div key={user?.id} className="flex flex-row justify-between py-2">
+                <div key={user?.id} className="flex flex-row justify-between p-2 border border-slate-600 rounded mb-2">
                     <p className="pt-1">Name: {user?.name}</p>
                     <button onClick={() => navigate(`/users/${user?.id}`)} className="border bg-black text-white px-2 py-1 rounded-lg">View More</button>
                 </div>
