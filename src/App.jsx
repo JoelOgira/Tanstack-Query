@@ -6,6 +6,7 @@ import Kicks from './Pages/Kicks/Kicks';
 import Users from './Pages/Users/Users';
 import UserDetails from './Pages/Users/UserDetails';
 import EditUsers from './Pages/Users/EditUsers';
+import ErrorPage from './Pages/ErrorPage';
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
         <Route path='/users' element={<Users />} />
         <Route path='/users/:id' element={<UserDetails />} />
         <Route path='/users/edit/:id' element={<EditUsers />} />
+        <Route path='*' element={<ErrorPage />} />
       </Routes>
       <Footer/>
     </div>
