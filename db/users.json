@@ -12,13 +12,8 @@
     },
     {
       "name": "Tucker Culson",
-      "details": "He is Jobless now\nLet's see what he will do now without the Mudroch money. ",
+      "details": "He is Jobless now\nLet's see what he will do now without the Mudroch money. \nGood for him though",
       "id": 3
-    },
-    {
-      "name": "Test",
-      "details": "Test details\n",
-      "id": 4
     },
     {
       "name": "Second test",
@@ -26,29 +21,24 @@
       "id": 5
     },
     {
-      "name": "Chat GPT",
-      "details": "AI wrote the debug for this",
+      "name": "Chat GPT by Open AI",
+      "details": "AI wrote the debug for this. Made my Sam Altman. with a nice backpackl;l';l;l'",
       "id": 7
     },
     {
-      "name": "Newer Debug",
-      "details": "This seems solid",
-      "id": 8
-    },
-    {
-      "name": "Julia Roberts",
-      "details": "Newer Debug",
-      "id": 10
-    },
-    {
-      "name": "Don't know",
-      "details": "No idea either",
-      "id": 12
-    },
-    {
       "name": "Looking good no?",
-      "details": "Hell no",
+      "details": "Hell noo",
       "id": 13
+    },
+    {
+      "name": "Start of Something new.",
+      "details": "And now it feels so right to be here with you. And damn everything you say.\n",
+      "id": 14
+    },
+    {
+      "name": "Nimechoka jameni. Really?",
+      "details": "Walai Msenge wewe\nUgh nanii",
+      "id": 15
     }
   ]
 }
