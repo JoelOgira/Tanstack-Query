@@ -7,7 +7,7 @@ function EditUsers() {
     const { id } = useParams();
     const navigate = useNavigate();
     const queryClient = useQueryClient();
-    const {data:user, isLoading, isError, error } = useQuery({
+    const {data:user, isLoading, isError, error, refetch } = useQuery({
         queryKey:['user', id],
         queryFn: () => getUser(id),
         enabled: Boolean(id)
@@ -33,7 +33,8 @@ function EditUsers() {
         updateUserMutation.mutate({ id, name: editName, details:editDetails });
         setEditDetails('');
         setEditName('');
-        navigate('/users')
+        navigate('/users');
+        refetch
     }
 
     return (
@@ -57,7 +58,7 @@ function EditUsers() {
                         defaultValue={editDetails}
                         onChange={e => setEditDetails(e.target.value)}
                         ></textarea>
-                        <button  className="border px-2 py-1 rounded-lg mx-auto mt-4">Save</button>
+                        <button type="submit" onClick={refetch} className="border px-2 py-1 rounded-lg mx-auto mt-4">Save</button>
                     </form>
                 </div>
             }
